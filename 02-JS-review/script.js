@@ -145,7 +145,7 @@ function getBook(id) {
 
 // Destructuring
 
-const book = getBook(1);
+const book = getBook(2);
 book;
 
 // const title = book.title;
@@ -177,9 +177,16 @@ updatedBook = {
 };
 updatedBook;
 
-const summary = `${title} is ${pages}-page long book, was written by ${author} and published in ${
-  publicationDate.split("-")[0]
-}. The book has ${hasMovieAdaptation ? "" : "not"} been adapted as a movie`;
+const getYear = (str) => str.split("-")[0];
+console.log(getYear(publicationDate));
+
+// function getYear(str) {
+//   return str.split("-")[0];
+// }
+
+const summary = `${title} is ${pages}-page long book, was written by ${author} and published in ${getYear(
+  publicationDate
+)}. The book has ${hasMovieAdaptation ? "" : "not"} been adapted as a movie`;
 summary;
 console.log(summary);
 
