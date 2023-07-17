@@ -14,4 +14,4 @@ root.render(
 );
 
 // React before v18
-// React.render(<App />);
+// React.renderDOM(<App />, document.getElementById("root"));
