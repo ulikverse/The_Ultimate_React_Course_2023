@@ -273,7 +273,7 @@ arr;
 const sortedByPages = books.slice().sort((a, b) => a.pages - b.pages);
 sortedByPages;
 
-// 1) Add a book object to Array
+//// 1) Add a book object to Array
 const newBook = {
   id: 6,
   title: "Harry Potter and the Chamber of Secrects",
