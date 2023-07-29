@@ -112,7 +112,7 @@ function Menu() {
 }
 
 function Pizza({ pizzaObj }) {
-  console.log();
+  // console.log();
 
   // if (pizzaObj.soldOut) return null;
 
